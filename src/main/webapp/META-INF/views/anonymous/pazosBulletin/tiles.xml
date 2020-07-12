@@ -7,13 +7,13 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/pazos-bulletin/form" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/pazosBulletin/form.jsp" />
+	<definition name="anonymous/pazosbulletin/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/pazosbulletin/form.jsp" />
 	</definition>
 	
 	
-	<definition name="anonymous/pazos-bulletin/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/pazosBulletin/list.jsp" />
+	<definition name="anonymous/pazosbulletin/list" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/pazosbulletin/list.jsp" />
 	</definition>
 	
 </tiles-definitions>

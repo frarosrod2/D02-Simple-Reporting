@@ -7,13 +7,13 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/rosa-bulletin/form" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/rosaBulletin/form.jsp" />
+	<definition name="anonymous/rosabulletin/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/rosabulletin/form.jsp" />
 	</definition>
 	
 	
-	<definition name="anonymous/rosa-bulletin/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/rosaBulletin/list.jsp" />
+	<definition name="anonymous/rosabulletin/list" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/rosabulletin/list.jsp" />
 	</definition>
 	
 </tiles-definitions>

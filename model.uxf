@@ -296,6 +296,7 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+<<<<<<< HEAD
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -315,4 +316,6 @@ Pazosbulletin
 bg=white</panel_attributes>
     <additional_attributes/>
   </element>
+=======
+>>>>>>> branch 'master' of https://github.com/frarosrod2/D02-Simple-Reporting.git
 </diagram>
