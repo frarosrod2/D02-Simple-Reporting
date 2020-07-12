@@ -29,7 +29,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `pazosbulletin` (
+    create table `pazos_bulletin` (
        `id` integer not null,
         `version` integer not null,
         `author` varchar(255),

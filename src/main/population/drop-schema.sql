@@ -27,7 +27,7 @@
 
     drop table if exists `consumer`;
 
-    drop table if exists `pazosbulletin`;
+    drop table if exists `pazos_bulletin`;
 
     drop table if exists `provider`;
 
