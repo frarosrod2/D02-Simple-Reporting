@@ -296,4 +296,26 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+<<<<<<< HEAD
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>266</y>
+      <w>245</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Pazosbulletin
+--
++ moment: Date {Temporal{TIMESTAMP}, Past}
++ author: String {NotBlank}
++ text: String {NotBlank}
++ type: ShoutType {Enumerated{STRING}}
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+=======
+>>>>>>> branch 'master' of https://github.com/frarosrod2/D02-Simple-Reporting.git
 </diagram>
