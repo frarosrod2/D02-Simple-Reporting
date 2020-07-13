@@ -1,19 +1,14 @@
 
-package acme.entities.overtures;
-
-import java.util.Date;
+package acme.entities.toolRecords;
 
 import javax.persistence.Entity;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.validation.Valid;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 
-import acme.framework.datatypes.Money;
+import org.hibernate.validator.constraints.Range;
+import org.hibernate.validator.constraints.URL;
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +16,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Overture extends DomainEntity {
+public class ToolRecord extends DomainEntity {
 
 	// Serialization identifier -----------------------------------------------
 
@@ -32,27 +27,27 @@ public class Overture extends DomainEntity {
 	@NotBlank
 	private String				title;
 
-	@Temporal(TemporalType.TIMESTAMP)
-	@Past
-	private Date				creation;
+	@NotBlank
+	private String				activitySector;
 
-	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
-	@Future
-	private Date				deadline;
+	@NotBlank
+	private String				inventor;
 
 	@NotBlank
 	private String				description;
 
-	@NotNull
-	@Valid
-	private Money				minMoney;
-
-	@NotNull
-	@Valid
-	private Money				maxMoney;
+	@NotBlank
+	@URL
+	private String				website;
 
 	@NotBlank
 	@Email
 	private String				email;
+
+	@NotNull
+	private Boolean				openSource;
+
+	@Range(min = -5, max = 5)
+	private Integer				stars;
+
 }
