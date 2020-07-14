@@ -1,18 +1,19 @@
 
 package acme.entities.notices;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-
-import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -47,7 +48,12 @@ public class Notice extends DomainEntity {
 	@NotBlank
 	private String				body;
 
-	@URL
-	private List<String>		optionalLinks;
+	private String				optionalLinks;
 
+
+	//Derivaded attributes
+	@Transient
+	public List<String> getLinkList() {
+		return Arrays.stream(this.optionalLinks.split(", ")).map(String::trim).collect(Collectors.toList());
+	}
 }

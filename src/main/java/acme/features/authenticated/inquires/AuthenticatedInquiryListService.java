@@ -1,3 +1,4 @@
+
 package acme.features.authenticated.inquires;
 
 import java.util.Collection;
@@ -12,41 +13,38 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedInquiryListService implements AbstractListService<Authenticated, Inquiry>{
+public class AuthenticatedInquiryListService implements AbstractListService<Authenticated, Inquiry> {
 
 	@Autowired
 	AuthenticatedInquiryRepository repository;
-	
+
+
 	@Override
-	public boolean authorise(Request<Inquiry> request) {
+	public boolean authorise(final Request<Inquiry> request) {
 		assert request != null;
-		
+
 		return true;
 	}
 
 	@Override
-	public void unbind(Request<Inquiry> request, Inquiry entity, Model model) {
+	public void unbind(final Request<Inquiry> request, final Inquiry entity, final Model model) {
 		assert request != null;
 		assert model != null;
 		assert model != null;
-		
-		request.unbind(entity, model, "title", "description", "range");
-		
+
+		request.unbind(entity, model, "title", "description");
+
 	}
 
 	@Override
-	public Collection<Inquiry> findMany(Request<Inquiry> request) {
+	public Collection<Inquiry> findMany(final Request<Inquiry> request) {
 		assert request != null;
-		
+
 		Collection<Inquiry> result;
-		
+
 		result = this.repository.findMany();
-		
+
 		return result;
 	}
-	
-	
 
-	
-	
 }

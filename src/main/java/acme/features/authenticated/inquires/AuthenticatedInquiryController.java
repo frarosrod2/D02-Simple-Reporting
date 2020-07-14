@@ -1,3 +1,4 @@
+
 package acme.features.authenticated.inquires;
 
 import javax.annotation.PostConstruct;
@@ -12,18 +13,20 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("authenticated/inquiry")
-public class AuthenticatedInquiryController extends AbstractController<Authenticated, Inquiry>{
+@RequestMapping("/authenticated/inquiry/")
+public class AuthenticatedInquiryController extends AbstractController<Authenticated, Inquiry> {
 
 	@Autowired
-	private AuthenticatedInquiryListService listService;
-	
-	@Autowired AuthenticatedInquiryShowService showService;
-	
+	private AuthenticatedInquiryListService	listService;
+
+	@Autowired
+	AuthenticatedInquiryShowService			showService;
+
+
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, listService);
-		super.addBasicCommand(BasicCommand.SHOW, showService);	
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
-	
+
 }
