@@ -36,6 +36,7 @@ master.menu.anonymous.favourite-link.nico = Enlace favorito de Nico
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.customisations.display = Mostrar personalización
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
