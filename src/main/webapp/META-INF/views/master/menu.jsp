@@ -37,6 +37,10 @@
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
 		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.inquiry.list" action="/auhtenticated/inquiry/list"/>
+		</acme:menu-option>
+		
 		
 	<acme:menu-option code="master.menu.bulletin.bulletins" access="isAnonymous()">
 		<acme:menu-suboption code="master.menu.bulletin.pazos.create" action="/anonymous/pazos-bulletin/create"/> 
