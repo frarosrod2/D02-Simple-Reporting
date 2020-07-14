@@ -29,7 +29,7 @@ public class AuthenticatedInquiryListService implements AbstractListService<Auth
 	@Override
 	public void unbind(final Request<Inquiry> request, final Inquiry entity, final Model model) {
 		assert request != null;
-		assert model != null;
+		assert entity != null;
 		assert model != null;
 
 		request.unbind(entity, model, "title", "description");

@@ -5,6 +5,8 @@ import java.beans.Transient;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -22,6 +24,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "deadline")
+})
 public class Inquiry extends DomainEntity {
 
 	// Serialisation identifier ----------------------------------------------------------
@@ -57,6 +62,7 @@ public class Inquiry extends DomainEntity {
 	@Email
 	private String				email;
 
+
 	@Transient
 	public String getRange() {
 		StringBuilder res = new StringBuilder();
@@ -68,6 +74,5 @@ public class Inquiry extends DomainEntity {
 
 		return res.toString();
 	}
-	
 
 }
