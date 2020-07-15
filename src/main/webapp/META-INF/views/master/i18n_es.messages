@@ -69,6 +69,10 @@ master.menu.bulletin.rosa.list = Listar boletines Rosa
 master.menu.bulletin.murillo.create = Crear boletin Murillo
 master.menu.bulletin.murillo.list = Listar boletines Murillo
 
+# master.menu.authenticated ###############################################################
+master.menu.authenticated.inquires = Peticiones
+master.menu.authenticated.inquiry.list = Lista de peticiones
+
 ﻿# master.footer ###############################################################
 
 master.footer.title.about = Nosotros

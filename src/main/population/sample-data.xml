@@ -16,6 +16,43 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+
+
+	<bean name="authenticatedUserAccount1" class="acme.framework.entities.UserAccount">
+		<property name="username" value="user1" />
+		<property name="password" value="user1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="surname" value="Test" />
+				<property name="name" value="User1" />
+				<property name="email" value="user1@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="authenticatedAuthenticated1" />
+			</list>
+		</property>
+	</bean>
+	
+
+	<bean name="authenticatedAuthenticated1" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticatedUserAccount1" />
+	</bean>
+
+	<bean id="inquiry01" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Deploy application" />
+		<property name="creation" value="2020/07/07 12:55" />
+		<property name="deadline" value="2020/12/06 23:59" />
+		<property name="description" value="Deploy the aplication Acme-Jobs in cloud" />
+		<property name="minMoney" value="10.00€" />
+		<property name="maxMoney" value="100.00€" />
+		<property name="email" value="example@hotmail.com" />
+	</bean>
+
+
+
 	
 	
 <!-- Default customisation -->
@@ -53,4 +90,5 @@
 <!-- 			</list> -->
 <!--   		</property> -->
   	</bean>
+
 </beans>

@@ -47,6 +47,23 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
+    create table `inquiry` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+
     create table `customisation` (
        `id` integer not null,
         `version` integer not null,
@@ -70,7 +87,7 @@
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-
+    
     create table `notice` (
        `id` integer not null,
         `version` integer not null,
@@ -174,6 +191,7 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDX9u3lu85o98y0tro95qasghg8e on `inquiry` (`deadline`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
