@@ -65,6 +65,10 @@ master.menu.bulletin.pazos.list = Listar boletines Pazos
 master.menu.bulletin.rosa.create = Crear boletin Rosa
 master.menu.bulletin.rosa.list = Listar boletines Rosa
 
+# master.menu.authenticated ###############################################################
+master.menu.authenticated.inquires = Peticiones
+master.menu.authenticated.inquiry.list = Lista de peticiones
+
 ﻿# master.footer ###############################################################
 
 master.footer.title.about = Nosotros

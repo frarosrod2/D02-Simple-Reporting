@@ -5,7 +5,7 @@
 
 <acme:form>
 	<acme:form-textbox code="authenticated.inquiry.form.label.title" path="title"/>
-	<acme:form-textbox code="authenticated.inquiry.form.label.creation" path="cretion"/>
+	<acme:form-textbox code="authenticated.inquiry.form.label.creation" path="creation"/>
 	<acme:form-textbox code="authenticated.inquiry.form.label.deadline" path="deadline"/>
 	<acme:form-textbox code="authenticated.inquiry.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.inquiry.form.label.range" path="range"/>

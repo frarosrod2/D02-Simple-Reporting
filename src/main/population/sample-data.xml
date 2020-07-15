@@ -40,4 +40,15 @@
 		<property name="userAccount" ref="authenticatedUserAccount1" />
 	</bean>
 
+	<bean id="inquiry01" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Deploy application" />
+		<property name="creation" value="2020/07/07 12:55" />
+		<property name="deadline" value="2020/12/06 23:59" />
+		<property name="description" value="Deploy the aplication Acme-Jobs in cloud" />
+		<property name="minMoney" value="10.00€" />
+		<property name="maxMoney" value="100.00€" />
+		<property name="email" value="example@hotmail.com" />
+	</bean>
+
+
 </beans>

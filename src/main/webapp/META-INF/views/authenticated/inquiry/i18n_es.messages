@@ -10,4 +10,4 @@ authenticated.inquiry.list.label.deadline = Deadline:
 authenticated.inquiry.list.label.range = Rango:
 
 
-authenticated.offer.form.button.return = Return
+authenticated.inquiry.form.button.return = Return
