@@ -47,6 +47,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
     create table `inquiry` (
        `id` integer not null,
         `version` integer not null,
@@ -62,6 +63,31 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
+    create table `customisation` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sectors` varchar(255),
+        `spam_threshold` double precision,
+        `spam_words` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `inquiry` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
     create table `notice` (
        `id` integer not null,
         `version` integer not null,

@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -47,6 +48,7 @@ public class Notice extends DomainEntity {
 
 	@NotBlank
 	private String				body;
+
 
 	private String				optionalLinks;
 
