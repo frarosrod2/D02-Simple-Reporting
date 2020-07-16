@@ -62,8 +62,23 @@
 		<property name="stars" value="4" />
 	</bean>
 	
-
+	<bean id="notice01" class="acme.entities.notices.Notice">
+		<property name="picture" value="https://i.imgur.com/KXmPAuz.jpg" />
+		<property name="title" value="Nuevos contagios" />
+		<property name="creation" value="2020/07/07 12:55" />
+		<property name="deadline" value="2020/12/10 23:59" />
+		<property name="body" value="Aumentan los contagios de covid-19 en Murcia." />
+		<property name="optionalLinks" value="https://www.ev.us.es, https://www.google.es" />
+	</bean>
 	
+	<bean id="notice02" class="acme.entities.notices.Notice">
+		<property name="picture" value="https://i.blogs.es/0b8b8b/dribbble_acme_800_logo/1366_2000.jpg" />
+		<property name="title" value="Subida de acciones de grupo Acme" />
+		<property name="creation" value="2020/07/10 12:55" />
+		<property name="deadline" value="2020/12/11 23:59" />
+		<property name="body" value="El grupo Acme ha obtenido una subida del valor de sus acciones en un porcentaje del 50%" />
+		<property name="optionalLinks" value="" />
+	</bean>
 	
 <!-- Default customisation -->
   	<bean id="defaultCustomisation" class="acme.entities.customisations.Customisation">

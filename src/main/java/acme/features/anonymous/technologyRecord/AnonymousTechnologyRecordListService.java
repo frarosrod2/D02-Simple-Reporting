@@ -1,3 +1,4 @@
+
 package acme.features.anonymous.technologyRecord;
 
 import java.util.Collection;
@@ -12,38 +13,37 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousTechnologyRecordListService implements AbstractListService<Anonymous, TechnologyRecord>{
+public class AnonymousTechnologyRecordListService implements AbstractListService<Anonymous, TechnologyRecord> {
 
 	@Autowired
 	AnonymousTechnologyRecordRepository repository;
-	
+
+
 	@Override
-	public boolean authorise(Request<TechnologyRecord> request) {
+	public boolean authorise(final Request<TechnologyRecord> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(Request<TechnologyRecord> request, TechnologyRecord entity, Model model) {
+	public void unbind(final Request<TechnologyRecord> request, final TechnologyRecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
-		request.unbind(entity, model, "title", "inventor");
-		
+
+		request.unbind(entity, model, "title", "activitySector", "stars");
+
 	}
 
 	@Override
-	public Collection<TechnologyRecord> findMany(Request<TechnologyRecord> request) {
+	public Collection<TechnologyRecord> findMany(final Request<TechnologyRecord> request) {
 		assert request != null;
-		
+
 		Collection<TechnologyRecord> result;
-		
+
 		result = this.repository.findMany();
-		
+
 		return result;
 	}
 
-	
-	
 }

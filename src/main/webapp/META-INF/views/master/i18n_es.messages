@@ -39,6 +39,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisations.display = Mostrar personalización
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.notice.list = Lista de noticias
+
 
 # master.menu.provider ########################################################
 
@@ -71,20 +73,29 @@ master.menu.anonymous.bulletin.murillo.list = Listar boletines Murillo
 
 # master.menu.authenticated ###############################################################
 
+master.menu.authenticated.menu.authenticated = Autenticado
 master.menu.authenticated.inquires = Peticiones
 master.menu.authenticated.inquiry.list = Lista de peticiones
 master.menu.authenticated.overtures = Propuestas
 master.menu.authenticated.overture.list = Lista de propuestas
+master.menu.authenticated.notice = Noticias
+master.menu.authenticated.notice.list = Lista de noticias
 
 # master.menu.anonymous.technologyRecord ###############################################################
 
-master.menu.anonymous.technologyRecord = Archivos tecnologicos
-master.menu.anonymous.technologyRecord.list = Lista de archivos tecnologicos
+master.menu.anonymous.technologyRecord = Archivos tecnológicos
+master.menu.anonymous.technologyRecord.list = Lista de archivos tecnológicos
+
+# master.menu.anonymous.notice ###############################################################
+
+master.menu.anonymous.notice = Noticias
+master.menu.anonymous.notice.list = Lista de noticias
+
 
 # master.menu.authenticated.technologyRecord ###############################################################
 
-master.menu.authenticated.technologyRecord = Archivos tecnologicos
-master.menu.authenticated.technologyRecord.list = Lista de archivos tecnologicos
+master.menu.authenticated.technologyRecord = Archivos tecnológicos
+master.menu.authenticated.technologyRecord.list = Lista de archivos tecnológicos
 
 ﻿# master.footer ###############################################################
 
@@ -102,11 +113,11 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
+	Acme Incubator, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
-master.company.address = Calle, número, Ciudad, Estado, País
+master.company.name = Acme Incubator, Inc.
+master.company.address = REina Mercedes 1, Sevilla, España
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
