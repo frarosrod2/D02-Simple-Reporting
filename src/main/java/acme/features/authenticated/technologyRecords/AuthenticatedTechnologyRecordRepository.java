@@ -14,7 +14,7 @@ public interface AuthenticatedTechnologyRecordRepository extends AbstractReposit
 	@Query("select t from TechnologyRecord t where t.id = ?1")
 	TechnologyRecord findOneById(int id);
 	
-	@Query("select t from TechnologyRecord t order by t.star desc")
+	@Query("select t from TechnologyRecord t")
 	Collection<TechnologyRecord> findMany();
 	
 }

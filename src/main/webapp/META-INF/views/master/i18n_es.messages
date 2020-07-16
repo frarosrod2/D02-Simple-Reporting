@@ -28,7 +28,7 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-link = Links favoritos
 master.menu.anonymous.favourite-link.paco = Enlace favorito de Paco
 master.menu.anonymous.favourite-link.nico = Enlace favorito de Nico
 master.menu.anonymous.favourite-link.alberto = Enlace favorito de Alberto
@@ -61,13 +61,13 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 # master.menu.bulletin ###############################################################
 
-master.menu.bulletin.bulletins = Boletines
-master.menu.bulletin.pazos.create = Crear boletin Pazos
-master.menu.bulletin.pazos.list = Listar boletines Pazos
-master.menu.bulletin.rosa.create = Crear boletin Rosa
-master.menu.bulletin.rosa.list = Listar boletines Rosa
-master.menu.bulletin.murillo.create = Crear boletin Murillo
-master.menu.bulletin.murillo.list = Listar boletines Murillo
+master.menu.anonymous.bulletin.bulletins = Boletines
+master.menu.anonymous.bulletin.pazos.create = Crear boletin Pazos
+master.menu.anonymous.bulletin.pazos.list = Listar boletines Pazos
+master.menu.anonymous.bulletin.rosa.create = Crear boletin Rosa
+master.menu.anonymous.bulletin.rosa.list = Listar boletines Rosa
+master.menu.anonymous.bulletin.murillo.create = Crear boletin Murillo
+master.menu.anonymous.bulletin.murillo.list = Listar boletines Murillo
 
 # master.menu.authenticated ###############################################################
 master.menu.authenticated.inquires = Peticiones
