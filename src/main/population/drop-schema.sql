@@ -33,6 +33,8 @@
 
     drop table if exists `inquiry`;
 
+    drop table if exists `murillo_bulletin`;
+
     drop table if exists `notice`;
 
     drop table if exists `overture`;

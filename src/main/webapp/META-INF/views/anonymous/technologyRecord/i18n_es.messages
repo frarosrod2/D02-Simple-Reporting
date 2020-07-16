@@ -1,0 +1,14 @@
+anonymous.technologyRecord.form.label.title = Titulo:
+anonymous.technologyRecord.form.label.activitySector = Sector:
+anonymous.technologyRecord.form.label.inventor = Inventor:
+anonymous.technologyRecord.form.label.description = Descripcion:
+anonymous.technologyRecord.form.label.website = Pagina web:
+anonymous.technologyRecord.form.label.email = Email:
+anonymous.technologyRecord.form.label.openSource = Open Source:
+anonymous.technologyRecord.form.label.stars = Estrellas:
+
+anonymous.technologyRecord.list.label.title = Titulo:
+anonymous.technologyRecord.list.label.activitySector = Sector:
+anonymous.technologyRecord.list.label.stars = Estrellas:
+
+anonymous.technologyRecord.form.button.return = Return

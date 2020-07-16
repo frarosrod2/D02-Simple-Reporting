@@ -51,7 +51,17 @@
 		<property name="email" value="example@hotmail.com" />
 	</bean>
 
-
+	<bean id="technologyRecord01" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Technology Record 1" />
+		<property name="activitySector" value="Tech" />
+		<property name="inventor" value="Google" />
+		<property name="description" value="First Technology Record Test" />
+		<property name="website" value="https://www.google.com" />
+		<property name="email" value="example@hotmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="4" />
+	</bean>
+	
 
 	
 	
