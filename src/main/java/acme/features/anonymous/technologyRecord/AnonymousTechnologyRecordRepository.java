@@ -1,4 +1,4 @@
-package acme.features.anonymous.technologyRecords;
+package acme.features.anonymous.technologyRecord;
 
 import java.util.Collection;
 

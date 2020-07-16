@@ -70,8 +70,19 @@ master.menu.anonymous.bulletin.murillo.create = Create Murillo Bulletin
 master.menu.anonymous.bulletin.murillo.list = List Murillo Bulletin
 
 # master.menu.authenticated ###############################################################
+
 master.menu.authenticated.inquires = Inquires
 master.menu.authenticated.inquiry.list = Inquiry List
+
+# master.menu.anonymous.technologyRecord ###############################################################
+
+master.menu.anonymous.technologyRecord = Technology Records
+master.menu.anonymous.technologyRecord.list = List of Technology Records
+
+# master.menu.authenticated.technologyRecord ###############################################################
+
+master.menu.authenticated.technologyRecord = Technology Records
+master.menu.authenticated.technologyRecord.list = List of Technology Records
 
 # master.footer ###############################################################
 

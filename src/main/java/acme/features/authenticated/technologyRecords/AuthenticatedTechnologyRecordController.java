@@ -13,7 +13,7 @@ import acme.framework.entities.Anonymous;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/technology-record")
+@RequestMapping("/authenticated/technologyrecord")
 public class AuthenticatedTechnologyRecordController extends AbstractController<Authenticated, TechnologyRecord>{
 	
 	@Autowired

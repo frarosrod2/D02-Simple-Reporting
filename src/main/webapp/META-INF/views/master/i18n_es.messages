@@ -70,8 +70,19 @@ master.menu.anonymous.bulletin.murillo.create = Crear boletin Murillo
 master.menu.anonymous.bulletin.murillo.list = Listar boletines Murillo
 
 # master.menu.authenticated ###############################################################
+
 master.menu.authenticated.inquires = Peticiones
 master.menu.authenticated.inquiry.list = Lista de peticiones
+
+# master.menu.anonymous.technologyRecord ###############################################################
+
+master.menu.anonymous.technologyRecord = Archivos tecnologicos
+master.menu.anonymous.technologyRecord.list = Lista de archivos tecnologicos
+
+# master.menu.authenticated.technologyRecord ###############################################################
+
+master.menu.authenticated.technologyRecord = Archivos tecnologicos
+master.menu.authenticated.technologyRecord.list = Lista de archivos tecnologicos
 
 ﻿# master.footer ###############################################################
 

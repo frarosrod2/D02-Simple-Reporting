@@ -37,9 +37,8 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.technologyRecord" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technologyRecords/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
 		</acme:menu-option>
-		
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
@@ -60,6 +59,9 @@
 			<acme:menu-suboption code="master.menu.authenticated.inquiry.list" action="/authenticated/inquiry/list"/>
 		</acme:menu-option>		
 		
+		<acme:menu-option code="master.menu.authenticated.technologyRecord" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.technologyRecord.list" action="/authenticated/technology-record/list"/>
+		</acme:menu-option>
 		
 	</acme:menu-left>
 

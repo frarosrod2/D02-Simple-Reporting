@@ -1,4 +1,4 @@
-package acme.features.anonymous.technologyRecords;
+package acme.features.anonymous.technologyRecord;
 
 import javax.annotation.PostConstruct;
 
@@ -12,7 +12,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/technologyRecord")
+@RequestMapping("/anonymous/technology-record")
 public class AnonymousTechnologyRecordController extends AbstractController<Anonymous, TechnologyRecord>{
 	
 	@Autowired
