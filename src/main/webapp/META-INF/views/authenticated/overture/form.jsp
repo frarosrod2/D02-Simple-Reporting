@@ -7,7 +7,7 @@
 	<acme:form-textbox code="authenticated.overture.form.label.title" path="title"/>
 	<acme:form-textbox code="authenticated.overture.form.label.creation" path="creation"/>
 	<acme:form-textbox code="authenticated.overture.form.label.deadline" path="deadline"/>
-	<acme:form-textbox code="authenticated.overture.form.label.description" path="description"/>
+	<acme:form-textarea code="authenticated.overture.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.overture.form.label.range" path="range"/>
 	<acme:form-textbox code="authenticated.overture.form.label.email" path="email"/>
 
