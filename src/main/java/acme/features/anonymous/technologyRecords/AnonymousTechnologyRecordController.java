@@ -1,4 +1,4 @@
-package acme.features.anonymous.technologyRecord;
+package acme.features.anonymous.technologyRecords;
 
 import javax.annotation.PostConstruct;
 

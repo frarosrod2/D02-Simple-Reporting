@@ -80,21 +80,24 @@ master.menu.authenticated.overtures = Propuestas
 master.menu.authenticated.overture.list = Lista de propuestas
 master.menu.authenticated.notice = Noticias
 master.menu.authenticated.notice.list = Lista de noticias
+master.menu.authenticated.toolRecord.list = Lista de registros tecnológicos
+master.menu.authenticated.technologyRecord.list = Lista de registros de herramientas
 
 # master.menu.anonymous.technologyRecord ###############################################################
 
-master.menu.anonymous.technologyRecord = Archivos tecnológicos
-master.menu.anonymous.technologyRecord.list = Lista de archivos tecnológicos
+master.menu.anonymous.technologyRecord = Registros tecnológicos
+master.menu.anonymous.technologyRecord.list = Lista de registros tecnológicos
+
+# master.menu.anonymous.toolRecord ###############################################################
+
+master.menu.anonymous.toolRecord = Registros de herramientas
+master.menu.anonymous.toolRecord.list = Lista de registros de herramientas
 
 # master.menu.anonymous.notice ###############################################################
 
 master.menu.anonymous.notice = Noticias
 master.menu.anonymous.notice.list = Lista de noticias
 
-
-# master.menu.authenticated.technologyRecord ###############################################################
-
-master.menu.authenticated.technologyRecord = Archivos tecnológicos
 master.menu.authenticated.technologyRecord.list = Lista de archivos tecnológicos
 
 ﻿# master.footer ###############################################################

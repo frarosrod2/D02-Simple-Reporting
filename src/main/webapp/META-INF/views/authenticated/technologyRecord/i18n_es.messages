@@ -1,13 +1,13 @@
-authenticated.technologyRecord.form.label.title = Titulo:
+authenticated.technologyRecord.form.label.title = Título:
 authenticated.technologyRecord.form.label.activitySector = Sector:
 authenticated.technologyRecord.form.label.inventor = Inventor:
-authenticated.technologyRecord.form.label.description = Descripcion:
-authenticated.technologyRecord.form.label.website = Pagina web:
+authenticated.technologyRecord.form.label.description = Descripción:
+authenticated.technologyRecord.form.label.website = Página web:
 authenticated.technologyRecord.form.label.email = Email:
-authenticated.technologyRecord.form.label.openSource = Open Source:
+authenticated.technologyRecord.form.label.openSource = Código abierto:
 authenticated.technologyRecord.form.label.stars = Estrellas:
 
-authenticated.technologyRecord.list.label.title = Titulo:
+authenticated.technologyRecord.list.label.title = Título:
 authenticated.technologyRecord.list.label.activitySector = Sector:
 authenticated.technologyRecord.list.label.stars = Estrellas:
 

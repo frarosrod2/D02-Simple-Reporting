@@ -80,6 +80,8 @@ master.menu.authenticated.overtures = Overtures
 master.menu.authenticated.overture.list = Overture List
 master.menu.authenticated.notice = Notices
 master.menu.authenticated.notice.list = Notice List
+master.menu.authenticated.technologyRecord.list = List of Technology Records
+master.menu.authenticated.toolRecord.list = List of Tool Records
 
 
 # master.menu.anonymous.technologyRecord ###############################################################
@@ -87,16 +89,17 @@ master.menu.authenticated.notice.list = Notice List
 master.menu.anonymous.technologyRecord = Technology Records
 master.menu.anonymous.technologyRecord.list = List of Technology Records
 
+# master.menu.anonymous.toolRecord ###############################################################
+
+master.menu.anonymous.toolRecord = Tool Records
+master.menu.anonymous.toolRecord.list = List of Tool Records
+
+
 # master.menu.anonymous.notice ###############################################################
 
 master.menu.anonymous.notice = Notices
 master.menu.anonymous.notice.list = Notice list
 
-
-# master.menu.authenticated.technologyRecord ###############################################################
-
-master.menu.authenticated.technologyRecord = Technology Records
-master.menu.authenticated.technologyRecord.list = List of Technology Records
 
 # master.footer ###############################################################
 

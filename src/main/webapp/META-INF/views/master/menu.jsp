@@ -40,6 +40,11 @@
 			<acme:menu-suboption code="master.menu.anonymous.technologyRecord.list" action="/anonymous/technology-record/list"/>
 		</acme:menu-option>
 
+		<acme:menu-option code="master.menu.anonymous.toolRecord" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.toolRecord.list" action="/anonymous/tool-record/list"/>
+		</acme:menu-option>
+
+
 		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
 		</acme:menu-option>
@@ -73,6 +78,9 @@
 			<acme:menu-suboption code="master.menu.authenticated.technologyRecord.list" action="/authenticated/technology-record/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.notice.list" action="/authenticated/notice/list"/>
+			<acme:menu-separator/>					
+			<acme:menu-suboption code="master.menu.authenticated.toolRecord.list" action="/authenticated/tool-record/list"/>
+			
 		</acme:menu-option>
 		
 	</acme:menu-left>
