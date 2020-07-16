@@ -73,6 +73,8 @@ master.menu.anonymous.bulletin.murillo.list = Listar boletines Murillo
 
 master.menu.authenticated.inquires = Peticiones
 master.menu.authenticated.inquiry.list = Lista de peticiones
+master.menu.authenticated.overtures = Propuestas
+master.menu.authenticated.overture.list = Lista de propuestas
 
 # master.menu.anonymous.technologyRecord ###############################################################
 

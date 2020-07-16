@@ -73,6 +73,10 @@ master.menu.anonymous.bulletin.murillo.list = List Murillo Bulletin
 
 master.menu.authenticated.inquires = Inquires
 master.menu.authenticated.inquiry.list = Inquiry List
+master.menu.authenticated.overtures = Overtures
+master.menu.authenticated.overture.list = Overture List
+
+
 
 # master.menu.anonymous.technologyRecord ###############################################################
 

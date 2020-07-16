@@ -58,6 +58,10 @@
 		<acme:menu-option code="master.menu.authenticated.inquires" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.inquiry.list" action="/authenticated/inquiry/list"/>
 		</acme:menu-option>		
+
+		<acme:menu-option code="master.menu.authenticated.overtures" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.overture.list" action="/authenticated/overture/list"/>
+		</acme:menu-option>		
 		
 		<acme:menu-option code="master.menu.authenticated.technologyRecord" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.technologyRecord.list" action="/authenticated/technology-record/list"/>
