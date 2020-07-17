@@ -52,7 +52,7 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.customisations.display" action="/administrator/customisation/display"/>
-			<acme:menu-suboption code="master.menu.administrator.dasbhoard" action="/administrator/dashboard/show" />
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
 			<acme:menu-separator/>

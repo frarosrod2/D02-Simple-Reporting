@@ -91,7 +91,6 @@
 
 </acme:form>
 
-
 <script type="text/javascript">
 	function getRandomColor() {
 	    var letters = '0123456789ABCDEF'.split('');
@@ -140,24 +139,26 @@
 	 }
 
 	$(document).ready(function(){
+		
 		var technologyRecordsSectors = [
 			<c:forEach items="${technologyRecordsSectors}" var="activitySector">"<c:out value='${activitySector}'></c:out>",</c:forEach>
 		];
-
-		var numberOfTechnologyRecords = [
-			<c:forEach items="${numberOfTechnologyRecords}" var="number"><c:out value='${number}'></c:out>,</c:forEach>
+		
+		var numberOfTechnologyRecordsBySector = [
+			<c:forEach items="${numberOfTechnologyRecordsBySector}" var="number"><c:out value='${number}'></c:out>,</c:forEach>
 		];
 		
 		var toolRecordsSectors = [
 			<c:forEach items="${toolRecordsSectors}" var="activitySector">"<c:out value='${activitySector}'></c:out>",</c:forEach>
 		];
 
-		var numberOfToolRecords = [
-			<c:forEach items="${numberOfToolRecords}" var="number"><c:out value='${number}'></c:out>,</c:forEach>
+		var numberOfToolRecordsBySector = [
+			<c:forEach items="${numberOfToolRecordsBySector}" var="number"><c:out value='${number}'></c:out>,</c:forEach>
 		]
 		
 		var ratioOpenVsClosedTechnologiesLabels = [
-			"<acme:message code='administrator.dashboard.chart.label.published'/>"
+			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtechnologies'/>",
+			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtechnologies'/>"
 		]
 		
 		var ratioOpenVsClosedTechnologiesData = [
@@ -165,13 +166,13 @@
 		]
 		
 		var ratioOpenVsClosedToolsDataLabels = [
-			"<acme:message code='administrator.dashboard.chart.label.published'/>"
+			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtools'/>",
+			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtools'/>"
 		]
 		
 		var ratioOpenVsClosedToolsData = [
 			<c:out value='${ratioOpenVsClosedTools}'></c:out>
 		]
-		
 
 		var barGraph1 = {
 				labels: technologyRecordsSectors,
@@ -180,7 +181,7 @@
 					backgroundColor: "rgba(54, 162, 235, 0.5)",
 					borderColor: "rgb(54, 162, 235)",
 					borderWidth: 1,
-					data: numberOfTechnologyRecords,
+					data: numberOfTechnologyRecordsBySector,
 				},]
 		}
 		
@@ -190,7 +191,7 @@
 					label: "<acme:message code='administrator.dashboard.chart.label.technologyRecords'/>",
 					backgroundColor: getNRandomColors(<c:out value='${fn:length(technologyRecordsSectors)}' />),
 					borderWidth: 1,
-					data: numberOfTechnologyRecords,
+					data: numberOfTechnologyRecordsBySector,
 				},]
 		}
 		
@@ -201,7 +202,7 @@
 					backgroundColor: "rgba(54, 162, 235, 0.5)",
 					borderColor: "rgb(54, 162, 235)",
 					borderWidth: 1,
-					data: numberOfToolRecords,
+					data: numberOfToolRecordsBySector,
 				},]
 		}
 		
@@ -211,7 +212,7 @@
 					label: "<acme:message code='administrator.dashboard.chart.label.toolRecords'/>",
 					backgroundColor: getNRandomColors(<c:out value='${fn:length(toolRecordsSectors)}' />),
 					borderWidth: 1,
-					data: numberOfToolRecords,
+					data: numberOfToolRecordsBySector,
 				},]
 		}
 		

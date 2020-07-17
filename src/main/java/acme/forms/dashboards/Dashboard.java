@@ -36,5 +36,4 @@ public class Dashboard implements Serializable {
 
 	Double						ratioOpenVsClosedTechnologies;
 	Double						ratioOpenVsClosedTools;
-
 }

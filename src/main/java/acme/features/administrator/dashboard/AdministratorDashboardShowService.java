@@ -31,8 +31,9 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, "numberOfNotices", "numberOfTechnologyRecords", "numberOfToolRecords", "minimumMoneyActiveInquiries", "maximumMoneyActiveInquiries", "averageMoneyActiveInquiries", "standardDeviationMoneyActiveInquiries",
-			"minimumMoneyActiveOvertures", "maximumMoneyActiveOvertures", "averageMoneyActiveOvertures", "standardDeviationMoneyActiveOvertures", "numberOfTechnologyRecordsBySector", "numberOfToolRecordsBySector", "ratioOpenVsClosedTechnologies",
-			"ratioOpenVsClosedTools, toolRecordsSectors, technologyRecordsSectors");
+			"minimumMoneyActiveOvertures", "maximumMoneyActiveOvertures", "averageMoneyActiveOvertures", "standardDeviationMoneyActiveOvertures", "numberOfTechnologyRecordsBySector", "numberOfToolRecordsBySector", "technologyRecordsSectors",
+			"toolRecordsSectors", "ratioOpenVsClosedTechnologies", "ratioOpenVsClosedTools");
+
 	}
 
 	@Override

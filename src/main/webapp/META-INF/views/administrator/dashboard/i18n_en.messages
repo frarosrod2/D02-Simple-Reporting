@@ -1,29 +1,29 @@
 administrator.dashboard.form.label.quantities = Quantities
-administrator.dashboard.form.label.numberOfAnnouncements = Number of announcements
-administrator.dashboard.form.label.numberOfCompanyRecords = Number of company records
-administrator.dashboard.form.label.numberOfInvestorRecords = Number of investor records
+administrator.dashboard.form.label.numberOfNotices = Number of announcements
+administrator.dashboard.form.label.numberOfTechnologyRecords = Number of company records
+administrator.dashboard.form.label.numberOfToolRecords = Number of investor records
 	
-administrator.dashboard.form.label.requests = Requests
-administrator.dashboard.form.label.minimumActiveRequestsRewards = Minimum reward
-administrator.dashboard.form.label.maximumActiveRequestsRewards = Maximum reward
-administrator.dashboard.form.label.averageActiveRequestsRewards = Average reward
-administrator.dashboard.form.label.standardDeviationActiveRequestsRewards = Standard deviation
+administrator.dashboard.form.label.requests = Inquiries
+administrator.dashboard.form.label.minimumMoneyActiveInquiries = Minimum reward
+administrator.dashboard.form.label.maximumMoneyActiveInquiries = Maximum reward
+administrator.dashboard.form.label.averageMoneyActiveInquiries = Average reward
+administrator.dashboard.form.label.standardDeviationMoneyActiveInquiries = Standard deviation
 
 administrator.dashboard.form.label.offers = Offers
-administrator.dashboard.form.label.minimumActiveOffersRewards = Minimum reward
-administrator.dashboard.form.label.maximumActiveOffersRewards = Maximum reward
-administrator.dashboard.form.label.averageActiveOffersRewards = Average reward
-administrator.dashboard.form.label.standardDeviationActiveOffersRewards = Standard deviation
+administrator.dashboard.form.label.minimumMoneyActiveOvertures = Minimum reward
+administrator.dashboard.form.label.maximumMoneyActiveOvertures = Maximum reward
+administrator.dashboard.form.label.averageMoneyActiveOvertures = Average reward
+administrator.dashboard.form.label.standardDeviationMoneyActiveOvertures = Standard deviation
 
 
-administrator.dashboard.chart.label.companyRecords = Company Records
-administrator.dashboard.chart.label.investorRecords = Investor Records
-administrator.dashboard.chart.label.companyRecordsBySectors = Company Records By Sectors
-administrator.dashboard.chart.label.investorRecordsBySectors = Investor Records By Sectors
+administrator.dashboard.chart.label.technologyRecordsBySectors = Company Records
+administrator.dashboard.chart.label.toolRecordsBySectors = Investor Records
+administrator.dashboard.chart.label.technologyRecordsSectors = Company Records By Sectors
+administrator.dashboard.chart.label.toolRecordsSectors = Investor Records By Sectors
 
 
-administrator.dashboard.chart.label.ratioOfApplicationsGroupedByStatus = Ratio Of Applications Grouped By Status
-administrator.dashboard.chart.label.ratioOfJobsGroupedByStatus = Ratio Of Jobs Grouped By Status
+administrator.dashboard.chart.label.ratioOpenVsClosedTechnologies = Ratio Of Applications Grouped By Status
+administrator.dashboard.chart.label.ratioOpenVsClosedTools = Ratio Of Jobs Grouped By Status
 administrator.dashboard.chart.label.pending = Pending
 administrator.dashboard.chart.label.accepted = Accepted
 administrator.dashboard.chart.label.rejected = Rejected
