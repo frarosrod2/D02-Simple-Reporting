@@ -16,7 +16,93 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+
+
+	<bean name="authenticatedUserAccount1" class="acme.framework.entities.UserAccount">
+		<property name="username" value="user1" />
+		<property name="password" value="user1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="surname" value="Test" />
+				<property name="name" value="User1" />
+				<property name="email" value="user1@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="authenticatedAuthenticated1" />
+			</list>
+		</property>
+	</bean>
 	
+
+	<bean name="authenticatedAuthenticated1" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticatedUserAccount1" />
+	</bean>
+
+	<bean id="inquiry01" class="acme.entities.inquiries.Inquiry">
+		<property name="title" value="Deploy application" />
+		<property name="creation" value="2020/07/07 12:55" />
+		<property name="deadline" value="2020/12/06 23:59" />
+		<property name="description" value="Deploy the aplication Acme-Jobs in cloud" />
+		<property name="minMoney" value="10.00€" />
+		<property name="maxMoney" value="100.00€" />
+		<property name="email" value="example@hotmail.com" />
+	</bean>
+
+	<bean id="technologyRecord01" class="acme.entities.technologyRecords.TechnologyRecord">
+		<property name="title" value="Technology Record 1" />
+		<property name="activitySector" value="Technology" />
+		<property name="inventor" value="Google" />
+		<property name="description" value="First Technology Record Test" />
+		<property name="website" value="https://www.google.com" />
+		<property name="email" value="google@gmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="4" />
+	</bean>
+	
+	<bean id="toolRecord01" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 1" />
+		<property name="activitySector" value="Technology" />
+		<property name="inventor" value="Microsoft" />
+		<property name="description" value="First Tool Record Test" />
+		<property name="website" value="https://www.microsoft.com" />
+		<property name="email" value="microsoft@hotmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="4" />
+	</bean>
+	
+	<bean id="toolRecord02" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 2" />
+		<property name="activitySector" value="Science" />
+		<property name="inventor" value="Sony" />
+		<property name="description" value="Second Tool Record Test" />
+		<property name="website" value="https://www.sony.com" />
+		<property name="email" value="sony@hotmail.com" />
+		<property name="openSource" value="true" />
+		<property name="stars" value="5" />
+	</bean>
+	
+	
+	
+	<bean id="notice01" class="acme.entities.notices.Notice">
+		<property name="picture" value="https://i.imgur.com/KXmPAuz.jpg" />
+		<property name="title" value="Nuevos contagios" />
+		<property name="creation" value="2020/07/07 12:55" />
+		<property name="deadline" value="2020/12/10 23:59" />
+		<property name="body" value="Aumentan los contagios de covid-19 en Murcia." />
+		<property name="optionalLinks" value="https://www.ev.us.es, https://www.google.es" />
+	</bean>
+	
+	<bean id="notice02" class="acme.entities.notices.Notice">
+		<property name="picture" value="https://i.blogs.es/0b8b8b/dribbble_acme_800_logo/1366_2000.jpg" />
+		<property name="title" value="Subida de acciones de grupo Acme" />
+		<property name="creation" value="2020/07/10 12:55" />
+		<property name="deadline" value="2020/12/11 23:59" />
+		<property name="body" value="El grupo Acme ha obtenido una subida del valor de sus acciones en un porcentaje del 50%" />
+		<property name="optionalLinks" value="" />
+	</bean>
 	
 <!-- Default customisation -->
   	<bean id="defaultCustomisation" class="acme.entities.customisations.Customisation">
@@ -53,4 +139,5 @@
 <!-- 			</list> -->
 <!--   		</property> -->
   	</bean>
+
 </beans>
