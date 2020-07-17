@@ -82,6 +82,7 @@ master.menu.authenticated.notice = Noticias
 master.menu.authenticated.notice.list = Lista de noticias
 master.menu.authenticated.toolRecord.list = Lista de registros tecnológicos
 master.menu.authenticated.technologyRecord.list = Lista de registros de herramientas
+master.menu.authenticated.challenge.list = Lista de desafíos
 
 # master.menu.anonymous.technologyRecord ###############################################################
 
