@@ -20,6 +20,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `credit_card_brand` varchar(255),
+        `credit_card_cvv` integer,
+        `credit_card_exp_month` integer,
+        `credit_card_exp_year` integer,
+        `credit_card_holder_name` varchar(255),
+        `credit_card_number` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -68,6 +83,18 @@
         `min_money_amount` double precision,
         `min_money_currency` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `murillo_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `number` integer,
+        `text` varchar(255),
+        `title` varchar(255),
+        `volumen` integer,
         primary key (`id`)
     ) engine=InnoDB;
 

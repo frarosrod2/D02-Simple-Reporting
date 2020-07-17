@@ -1,0 +1,46 @@
+administrator.dashboard.form.label.quantities = Quantities
+administrator.dashboard.form.label.numberOfAnnouncements = Number of announcements
+administrator.dashboard.form.label.numberOfCompanyRecords = Number of company records
+administrator.dashboard.form.label.numberOfInvestorRecords = Number of investor records
+	
+administrator.dashboard.form.label.requests = Requests
+administrator.dashboard.form.label.minimumActiveRequestsRewards = Minimum reward
+administrator.dashboard.form.label.maximumActiveRequestsRewards = Maximum reward
+administrator.dashboard.form.label.averageActiveRequestsRewards = Average reward
+administrator.dashboard.form.label.standardDeviationActiveRequestsRewards = Standard deviation
+
+administrator.dashboard.form.label.offers = Offers
+administrator.dashboard.form.label.minimumActiveOffersRewards = Minimum reward
+administrator.dashboard.form.label.maximumActiveOffersRewards = Maximum reward
+administrator.dashboard.form.label.averageActiveOffersRewards = Average reward
+administrator.dashboard.form.label.standardDeviationActiveOffersRewards = Standard deviation
+
+
+administrator.dashboard.chart.label.companyRecords = Company Records
+administrator.dashboard.chart.label.investorRecords = Investor Records
+administrator.dashboard.chart.label.companyRecordsBySectors = Company Records By Sectors
+administrator.dashboard.chart.label.investorRecordsBySectors = Investor Records By Sectors
+
+
+administrator.dashboard.chart.label.ratioOfApplicationsGroupedByStatus = Ratio Of Applications Grouped By Status
+administrator.dashboard.chart.label.ratioOfJobsGroupedByStatus = Ratio Of Jobs Grouped By Status
+administrator.dashboard.chart.label.pending = Pending
+administrator.dashboard.chart.label.accepted = Accepted
+administrator.dashboard.chart.label.rejected = Rejected
+administrator.dashboard.chart.label.draft = Draft
+administrator.dashboard.chart.label.published = Published
+
+administrator.dashboard.form.label.application = Applications
+administrator.dashboard.form.label.job = Jobs
+administrator.dashboard.form.label.avgNumberJobsPerEmployer = Average number of jobs per employer
+administrator.dashboard.form.label.avgNumberApplicationsPerEmployer = Average number of applications per employer
+administrator.dashboard.form.label.avgNumberApplicationsPerWorker = Average number of applications per worker
+
+administrator.dashboard.chart.label.applicationsPerDay = Applications Per Day
+
+
+
+administrator.dashboard.form.label.controlCheck = Control Check
+administrator.dashboard.form.label.ratioOfJobsDulesit = Ratio of jobs that have a dulesit
+administrator.dashboard.form.label.ratioOfDulesitTagging = Ratio of dulesits that include a tagging
+administrator.dashboard.form.label.ratioOfApplicationsPassTagging = Ratio of applications that include a password-protected tagging

@@ -25,6 +25,8 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `banner`;
+
     drop table if exists `challenge`;
 
     drop table if exists `consumer`;
@@ -32,6 +34,8 @@
     drop table if exists `customisation`;
 
     drop table if exists `inquiry`;
+
+    drop table if exists `murillo_bulletin`;
 
     drop table if exists `notice`;
 
