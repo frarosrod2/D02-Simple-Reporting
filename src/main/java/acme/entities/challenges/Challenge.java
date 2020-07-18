@@ -6,7 +6,6 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -53,17 +52,6 @@ public class Challenge extends DomainEntity {
 	@NotNull
 	private Money				expertReward;
 
-
 	// Derived Attributes ----------------------------------------------------------------
-
-	@Transient
-	public Boolean isDeadlineCorrect() {
-		Boolean res = false;
-		Date now = new Date();
-		if (this.deadline.getTime() - now.getTime() / 86400000 > 30) {
-			res = true;
-		}
-		return res;
-	}
 
 }

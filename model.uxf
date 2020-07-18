@@ -287,8 +287,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>994</x>
-      <y>98</y>
+      <x>868</x>
+      <y>273</y>
       <w>217</w>
       <h>98</h>
     </coordinates>
@@ -307,8 +307,8 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>994</x>
-      <y>0</y>
+      <x>1001</x>
+      <y>189</y>
       <w>217</w>
       <h>77</h>
     </coordinates>
@@ -323,40 +323,10 @@ bg=white</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>791</x>
-      <y>105</y>
-      <w>217</w>
-      <h>105</h>
-    </coordinates>
-    <panel_attributes>lt=x-&gt;
-
-m1=0..*
-m2=1
-&lt; Created by</panel_attributes>
-    <additional_attributes>290.0;20.0;30.0;20.0;10.0;130.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>777</x>
-      <y>21</y>
-      <w>231</w>
-      <h>189</h>
-    </coordinates>
-    <panel_attributes>lt=x-&gt;
-
-m1=0..*
-m2=1
-&lt; Created by</panel_attributes>
-    <additional_attributes>310.0;20.0;30.0;20.0;10.0;250.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>994</x>
-      <y>217</y>
+      <x>1134</x>
+      <y>273</y>
       <w>217</w>
       <h>98</h>
     </coordinates>
@@ -371,21 +341,6 @@ MurilloBulletin
 + text: String {NotBlank}
 bg=white</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>812</x>
-      <y>210</y>
-      <w>196</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=x-&gt;
-
-m1=0..*
-m2=1
-&lt; Created by</panel_attributes>
-    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -434,34 +389,10 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>833</x>
-      <y>511</y>
-      <w>266</w>
-      <h>147</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Challenge
---
-+ title: String {NotBlank}
-+ deadline: Date {NotNull, Temporal{TIMESTAMP}, Future}
-+ description: String {NotBlank}
-+ rookieGoal: String {NotBlank}
-+ rookieReward: Money {NotNull, Valid}
-+ averageGoal: String {NotBlank}
-+ averageReward: Money {NotNull, Valid}
-+ expertGoal: String {NotBlank}
-+ expertReward: Money {NotNull, Valid}
-+ isDeadlineCorrect: String {Transient}
-bg=white</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>1113</x>
       <y>511</y>
       <w>266</w>
-      <h>147</h>
+      <h>105</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Notice
@@ -479,7 +410,7 @@ bg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>833</x>
-      <y>665</y>
+      <y>672</y>
       <w>266</w>
       <h>147</h>
     </coordinates>
@@ -501,9 +432,9 @@ bg=white</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1113</x>
-      <y>665</y>
+      <y>623</y>
       <w>266</w>
-      <h>147</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 toolRecord
@@ -516,6 +447,29 @@ toolRecord
 + email: String {NotBlank, Email}
 + openSource: Boolean {NottNull}
 + starts: Integer {Range(min = -5, max = 5)}
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>833</x>
+      <y>525</y>
+      <w>266</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++ title: String {NotBlank}
++ deadline: Date {NotNull, Temporal{TIMESTAMP}, Future}
++ description: String {NotBlank}
++ rookieGoal: String {NotBlank}
++ rookieReward: Money {NotNull, Valid}
++ averageGoal: String {NotBlank}
++ averageReward: Money {NotNull, Valid}
++ expertGoal: String {NotBlank}
++ expertReward: Money {NotNull, Valid}
 bg=white</panel_attributes>
     <additional_attributes/>
   </element>
