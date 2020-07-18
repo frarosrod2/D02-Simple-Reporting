@@ -53,13 +53,5 @@ public class Challenge extends DomainEntity {
 	private Money				expertReward;
 
 	// Derived Attributes ----------------------------------------------------------------
-	//	public Boolean getIsDeadlineCorrect() {
-	//		Boolean res = false;
-	//		Date now = new Date();
-	//		if ((this.deadline.getTime() - now.getTime()) / 86400000 > 30) {
-	//			res = true;
-	//		}
-	//		return res;
-	//	}
 
 }
