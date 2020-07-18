@@ -23,6 +23,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.nico" action="https://github.com/nicpazsar"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.alberto" action="https://www.informatica.us.es/"/>
 		</acme:menu-option>
+
+<!-- -------------------------------- ANONYMOUS --------------------------------------- -->
 		
 		<acme:menu-option code="master.menu.anonymous.bulletin.bulletins" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.bulletin.pazos.create" action="/anonymous/pazos-bulletin/create"/> 
@@ -49,9 +51,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
 		</acme:menu-option>
 
+<!-- -------------------------------- ADMIN --------------------------------------- -->
+
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.customisations.display" action="/administrator/customisation/display"/>
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
 			<acme:menu-separator/>
@@ -80,6 +85,8 @@
 			<acme:menu-suboption code="master.menu.authenticated.notice.list" action="/authenticated/notice/list"/>
 			<acme:menu-separator/>					
 			<acme:menu-suboption code="master.menu.authenticated.toolRecord.list" action="/authenticated/tool-record/list"/>
+			<acme:menu-separator/>					
+			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
 			
 		</acme:menu-option>
 		

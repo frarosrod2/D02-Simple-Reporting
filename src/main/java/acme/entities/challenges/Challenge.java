@@ -37,18 +37,18 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				description;
 
-	@NotBlank
-	private String				rookieGoal;
+	@NotNull
+	private Money				rookieGoal;
 	@NotNull
 	private Money				rookieReward;
 
-	@NotBlank
-	private String				averageGoal;
+	@NotNull
+	private Money				averageGoal;
 	@NotNull
 	private Money				averageReward;
 
-	@NotBlank
-	private String				expertGoal;
+	@NotNull
+	private Money				expertGoal;
 	@NotNull
 	private Money				expertReward;
 

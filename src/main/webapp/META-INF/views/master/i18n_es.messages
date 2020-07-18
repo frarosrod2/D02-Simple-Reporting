@@ -38,6 +38,7 @@ master.menu.anonymous.favourite-link.alberto = Enlace favorito de Alberto
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisations.display = Mostrar personalización
+master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.notice.list = Lista de noticias
 
@@ -80,8 +81,9 @@ master.menu.authenticated.overtures = Propuestas
 master.menu.authenticated.overture.list = Lista de propuestas
 master.menu.authenticated.notice = Noticias
 master.menu.authenticated.notice.list = Lista de noticias
-master.menu.authenticated.toolRecord.list = Lista de registros tecnológicos
-master.menu.authenticated.technologyRecord.list = Lista de registros de herramientas
+master.menu.authenticated.toolRecord.list = Lista de registros de herramientas
+master.menu.authenticated.technologyRecord.list = Lista de registros tecnológicos
+master.menu.authenticated.challenge.list = Lista de desafíos
 
 # master.menu.anonymous.technologyRecord ###############################################################
 
