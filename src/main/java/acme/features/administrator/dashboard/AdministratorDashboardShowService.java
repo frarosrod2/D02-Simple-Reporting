@@ -32,7 +32,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		request.unbind(entity, model, "numberOfNotices", "numberOfTechnologyRecords", "numberOfToolRecords", "minimumMoneyActiveInquiries", "maximumMoneyActiveInquiries", "averageMoneyActiveInquiries", "standardDeviationMoneyActiveInquiries",
 			"minimumMoneyActiveOvertures", "maximumMoneyActiveOvertures", "averageMoneyActiveOvertures", "standardDeviationMoneyActiveOvertures", "numberOfTechnologyRecordsBySector", "numberOfToolRecordsBySector", "technologyRecordsSectors",
-			"toolRecordsSectors", "ratioOpenVsClosedTechnologies", "ratioOpenVsClosedTools");
+			"toolRecordsSectors", "ratioOpenTechnologies", "ratioClosedTechnologies", "ratioOpenTools", "ratioClosedTools");
 
 	}
 
@@ -61,8 +61,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setTechnologyRecordsSectors(this.repository.getTechnologyRecordsSectors());
 		result.setToolRecordsSectors(this.repository.getToolRecordsSectors());
 
-		result.setRatioOpenVsClosedTechnologies(this.repository.getRatioOpenVsClosedTechnologies());
-		result.setRatioOpenVsClosedTools(this.repository.getRatioOpenVsClosedTools());
+		result.setRatioOpenTechnologies(this.repository.getRatioOpenTechnologies());
+		result.setRatioOpenTools(this.repository.getRatioOpenTools());
+		result.setRatioClosedTechnologies(this.repository.getRatioClosedTechnologies());
+		result.setRatioClosedTools(this.repository.getRatioClosedTools());
 
 		return result;
 	}

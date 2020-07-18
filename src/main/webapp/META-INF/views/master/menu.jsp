@@ -23,6 +23,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.nico" action="https://github.com/nicpazsar"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link.alberto" action="https://www.informatica.us.es/"/>
 		</acme:menu-option>
+
+<!-- -------------------------------- ANONYMOUS --------------------------------------- -->
 		
 		<acme:menu-option code="master.menu.anonymous.bulletin.bulletins" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.bulletin.pazos.create" action="/anonymous/pazos-bulletin/create"/> 
@@ -48,6 +50,8 @@
 		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.notice.list" action="/anonymous/notice/list"/>
 		</acme:menu-option>
+
+<!-- -------------------------------- ADMIN --------------------------------------- -->
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

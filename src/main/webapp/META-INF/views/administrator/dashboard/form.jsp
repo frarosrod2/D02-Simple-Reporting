@@ -156,22 +156,24 @@
 			<c:forEach items="${numberOfToolRecordsBySector}" var="number"><c:out value='${number}'></c:out>,</c:forEach>
 		]
 		
-		var ratioOpenVsClosedTechnologiesLabels = [
-			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtechnologies'/>",
-			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtechnologies'/>"
+		var ratioTechnologiesLabels = [
+			"<acme:message code='administrator.dashboard.chart.label.open'/>",
+			"<acme:message code='administrator.dashboard.chart.label.closed'/>"
 		]
 		
-		var ratioOpenVsClosedTechnologiesData = [
-			<c:out value='${ratioOpenVsClosedTechnologies}'></c:out>,
+		var ratioTechnologiesData = [
+			<c:out value='${ratioOpenTechnologies}'></c:out>,
+			<c:out value='${ratioClosedTechnologies}'></c:out>
 		]
 		
-		var ratioOpenVsClosedToolsDataLabels = [
-			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtools'/>",
-			"<acme:message code='administrator.dashboard.chart.label.openvsclosedtools'/>"
+		var ratioToolsData = [
+			<c:out value='${ratioOpenTools}'></c:out>,
+			<c:out value='${ratioClosedTools}'></c:out>
 		]
 		
-		var ratioOpenVsClosedToolsData = [
-			<c:out value='${ratioOpenVsClosedTools}'></c:out>
+		var ratioToolsLabels = [
+			"<acme:message code='administrator.dashboard.chart.label.open'/>",
+			"<acme:message code='administrator.dashboard.chart.label.closed'/>"
 		]
 
 		var barGraph1 = {
@@ -217,22 +219,22 @@
 		}
 		
 		var pieGraph5 = {
-				labels: ratioOpenVsClosedTechnologiesLabels,
+				labels: ratioTechnologiesLabels,
 				datasets: [{
 					label: "<acme:message code='administrator.dashboard.chart.label.ratioOpenVsClosedTechnologies'/>",
 					backgroundColor: ["#999999", "#4BC0C0"],
 					borderWidth: 1,
-					data: ratioOpenVsClosedTechnologiesData,
+					data: ratioTechnologiesData,
 				},]
 		}
 		
 		var pieGraph6 = {
-				labels: ratioOpenVsClosedToolsLabels,
+				labels: ratioToolsLabels,
 				datasets: [{
 					label: "<acme:message code='administrator.dashboard.chart.label.ratioOpenVsClosedTools'/>",
 					backgroundColor: ["#FFCD56", "#4BC0C0", "#FF6384"],
 					borderWidth: 1,
-					data: ratioOpenVsClosedTools,
+					data: ratioToolsData,
 				},]
 		}
 		

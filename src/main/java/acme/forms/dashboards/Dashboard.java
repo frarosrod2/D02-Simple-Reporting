@@ -34,6 +34,8 @@ public class Dashboard implements Serializable {
 	Object[]					technologyRecordsSectors;
 	Object[]					toolRecordsSectors;
 
-	Double						ratioOpenVsClosedTechnologies;
-	Double						ratioOpenVsClosedTools;
+	Double						ratioClosedTechnologies;
+	Double						ratioOpenTechnologies;
+	Double						ratioClosedTools;
+	Double						ratioOpenTools;
 }

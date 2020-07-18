@@ -38,6 +38,7 @@ master.menu.anonymous.favourite-link.alberto = Alberto's favourite link
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisations.display = Display customisation 
+master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.notice.list = Notice list
 

@@ -58,10 +58,16 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 
 	// Ratio -----------------------------------------------------------------------------------
 
-	@Query("select 1.0 * count(a) / (select count(b) from TechnologyRecord b where a.openSource='false') from TechnologyRecord a where a.openSource='true'")
-	Double getRatioOpenVsClosedTechnologies();
+	@Query("select 1.0 * count(a) / (select count(b) from TechnologyRecord b) from TechnologyRecord a where a.openSource=TRUE")
+	Double getRatioOpenTechnologies();
 
-	@Query("select 1.0 * count(a) / (select count(b) from ToolRecord b where a.openSource='false') from ToolRecord a where a.openSource='true'")
-	Double getRatioOpenVsClosedTools();
+	@Query("select 1.0 * count(a) / (select count(b) from TechnologyRecord b) from TechnologyRecord a where a.openSource=FALSE")
+	Double getRatioClosedTechnologies();
+
+	@Query("select 1.0 * count(a) / (select count(b) from ToolRecord b) from ToolRecord a where a.openSource=TRUE")
+	Double getRatioOpenTools();
+
+	@Query("select 1.0 * count(a) / (select count(b) from ToolRecord b) from ToolRecord a where a.openSource=FALSE")
+	Double getRatioClosedTools();
 
 }
