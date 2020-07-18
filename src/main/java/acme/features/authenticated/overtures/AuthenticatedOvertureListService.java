@@ -6,7 +6,6 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.inquiries.Inquiry;
 import acme.entities.overtures.Overture;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -33,7 +32,7 @@ public class AuthenticatedOvertureListService implements AbstractListService<Aut
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "description", "range");
+		request.unbind(entity, model, "title", "deadline", "range");
 
 	}
 

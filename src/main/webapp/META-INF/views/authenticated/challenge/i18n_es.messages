@@ -1,5 +1,5 @@
 authenticated.challenge.form.label.title = Título
-authenticated.challenge.form.label.deadline = fecha límite
+authenticated.challenge.form.label.deadline = Fecha límite
 authenticated.challenge.form.label.description = Descripción
 authenticated.challenge.form.label.rookieGoal = Objetivo de novato
 authenticated.challenge.form.label.rookieReward = Recompensa de novato
