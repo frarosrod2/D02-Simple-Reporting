@@ -40,7 +40,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisations.display = Display customisation 
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.shutdown = Shut down
-master.menu.administrator.notice.list = Notice list
+master.menu.administrator.notice.list = List of Notices
 
 
 # master.menu.provider ########################################################
@@ -76,14 +76,14 @@ master.menu.anonymous.bulletin.murillo.list = List Murillo Bulletin
 
 master.menu.authenticated.menu.authenticated = Authenticated
 master.menu.authenticated.inquires = Inquires
-master.menu.authenticated.inquiry.list = Inquiry List
+master.menu.authenticated.inquiry.list = List of Inquiries
 master.menu.authenticated.overtures = Overtures
-master.menu.authenticated.overture.list = Overture List
+master.menu.authenticated.overture.list = List of Overtures
 master.menu.authenticated.notice = Notices
-master.menu.authenticated.notice.list = Notice List
+master.menu.authenticated.notice.list = List of Notices
 master.menu.authenticated.technologyRecord.list = List of Technology Records
 master.menu.authenticated.toolRecord.list = List of Tool Records
-
+master.menu.authenticated.challenge.list = List of Challenges
 
 # master.menu.anonymous.technologyRecord ###############################################################
 
@@ -99,7 +99,7 @@ master.menu.anonymous.toolRecord.list = List of Tool Records
 # master.menu.anonymous.notice ###############################################################
 
 master.menu.anonymous.notice = Notices
-master.menu.anonymous.notice.list = Notice list
+master.menu.anonymous.notice.list = List of Notices
 
 
 # master.footer ###############################################################
