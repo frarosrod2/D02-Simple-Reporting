@@ -20,18 +20,36 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `credit_card_brand` varchar(255),
+        `credit_card_cvv` integer,
+        `credit_card_exp_month` integer,
+        `credit_card_exp_year` integer,
+        `credit_card_holder_name` varchar(255),
+        `credit_card_number` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
-        `average_goal` varchar(255),
+        `average_goal_amount` double precision,
+        `average_goal_currency` varchar(255),
         `average_reward_amount` double precision,
         `average_reward_currency` varchar(255),
         `deadline` datetime(6),
         `description` varchar(255),
-        `expert_goal` varchar(255),
+        `expert_goal_amount` double precision,
+        `expert_goal_currency` varchar(255),
         `expert_reward_amount` double precision,
         `expert_reward_currency` varchar(255),
-        `rookie_goal` varchar(255),
+        `rookie_goal_amount` double precision,
+        `rookie_goal_currency` varchar(255),
         `rookie_reward_amount` double precision,
         `rookie_reward_currency` varchar(255),
         `title` varchar(255),
@@ -68,6 +86,18 @@
         `min_money_amount` double precision,
         `min_money_currency` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `murillo_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `number` integer,
+        `text` varchar(255),
+        `title` varchar(255),
+        `volumen` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -174,6 +204,7 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDX9u3lu85o98y0tro95qasghg8e on `inquiry` (`deadline`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

@@ -28,7 +28,7 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-link = Links favoritos
 master.menu.anonymous.favourite-link.paco = Enlace favorito de Paco
 master.menu.anonymous.favourite-link.nico = Enlace favorito de Nico
 master.menu.anonymous.favourite-link.alberto = Enlace favorito de Alberto
@@ -38,7 +38,10 @@ master.menu.anonymous.favourite-link.alberto = Enlace favorito de Alberto
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisations.display = Mostrar personalización
+master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.notice.list = Lista de noticias
+
 
 # master.menu.provider ########################################################
 
@@ -61,13 +64,43 @@ master.menu.user-account.become-consumer = Hazte consumidor
 
 # master.menu.bulletin ###############################################################
 
-master.menu.bulletin.bulletins = Boletines
-master.menu.bulletin.pazos.create = Crear boletin Pazos
-master.menu.bulletin.pazos.list = Listar boletines Pazos
-master.menu.bulletin.rosa.create = Crear boletin Rosa
-master.menu.bulletin.rosa.list = Listar boletines Rosa
-master.menu.bulletin.murillo.create = Crear boletin Murillo
-master.menu.bulletin.murillo.list = Listar boletines Murillo
+master.menu.anonymous.bulletin.bulletins = Boletines
+master.menu.anonymous.bulletin.pazos.create = Crear boletin Pazos
+master.menu.anonymous.bulletin.pazos.list = Listar boletines Pazos
+master.menu.anonymous.bulletin.rosa.create = Crear boletin Rosa
+master.menu.anonymous.bulletin.rosa.list = Listar boletines Rosa
+master.menu.anonymous.bulletin.murillo.create = Crear boletin Murillo
+master.menu.anonymous.bulletin.murillo.list = Listar boletines Murillo
+
+# master.menu.authenticated ###############################################################
+
+master.menu.authenticated.menu.authenticated = Autenticado
+master.menu.authenticated.inquires = Peticiones
+master.menu.authenticated.inquiry.list = Lista de peticiones
+master.menu.authenticated.overtures = Propuestas
+master.menu.authenticated.overture.list = Lista de propuestas
+master.menu.authenticated.notice = Noticias
+master.menu.authenticated.notice.list = Lista de noticias
+master.menu.authenticated.toolRecord.list = Lista de registros de herramientas
+master.menu.authenticated.technologyRecord.list = Lista de registros tecnológicos
+master.menu.authenticated.challenge.list = Lista de desafíos
+
+# master.menu.anonymous.technologyRecord ###############################################################
+
+master.menu.anonymous.technologyRecord = Registros tecnológicos
+master.menu.anonymous.technologyRecord.list = Lista de registros tecnológicos
+
+# master.menu.anonymous.toolRecord ###############################################################
+
+master.menu.anonymous.toolRecord = Registros de herramientas
+master.menu.anonymous.toolRecord.list = Lista de registros de herramientas
+
+# master.menu.anonymous.notice ###############################################################
+
+master.menu.anonymous.notice = Noticias
+master.menu.anonymous.notice.list = Lista de noticias
+
+master.menu.authenticated.technologyRecord.list = Lista de archivos tecnológicos
 
 ﻿# master.footer ###############################################################
 
@@ -85,11 +118,11 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
+	Acme Incubator, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
-master.company.address = Calle, número, Ciudad, Estado, País
+master.company.name = Acme Incubator, Inc.
+master.company.address = REina Mercedes 1, Sevilla, España
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 

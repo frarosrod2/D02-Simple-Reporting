@@ -1,6 +1,7 @@
 
 package acme.entities.overtures;
 
+import java.beans.Transient;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -55,4 +56,17 @@ public class Overture extends DomainEntity {
 	@NotBlank
 	@Email
 	private String				email;
+
+	@Transient
+	public String getRange() {
+		StringBuilder res = new StringBuilder();
+		res.append(this.minMoney.getAmount());
+		res.append(" --- ");
+		res.append(this.maxMoney.getAmount());
+		res.append(" ");
+		res.append(this.maxMoney.getCurrency());
+
+		return res.toString();
+	}
+
 }

@@ -1,11 +1,16 @@
 
 package acme.entities.notices;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -44,7 +49,13 @@ public class Notice extends DomainEntity {
 	@NotBlank
 	private String				body;
 
-	@NotBlank
+
 	private String				optionalLinks;
 
+
+	//Derivaded attributes
+	@Transient
+	public List<String> getLinkList() {
+		return Arrays.stream(this.optionalLinks.split(", ")).map(String::trim).collect(Collectors.toList());
+	}
 }
