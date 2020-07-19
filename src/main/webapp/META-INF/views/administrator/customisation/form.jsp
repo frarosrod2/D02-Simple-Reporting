@@ -22,11 +22,4 @@
 	
   	<acme:form-return code="administrator.customisation.form.button.return" />
   	
-  	<jstl:if test="${command == 'update'}">
-  		<acme:form-submit code="administrator.customisation.form.button.update" action="/administrator/customisation/update" />
-  	</jstl:if>
-  	
-  	<jstl:if test="${command == 'display'}">
-  		<acme:form-return code="administrator.customisation.form.button.edit" action="/administrator/customisation/update" />
-  	</jstl:if>
 </acme:form>

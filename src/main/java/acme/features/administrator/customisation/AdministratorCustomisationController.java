@@ -18,15 +18,11 @@ import acme.framework.entities.Administrator;
 public class AdministratorCustomisationController extends AbstractController<Administrator, Customisation> {
 
 	@Autowired
-	private AdministratorCustomisationDisplayService	displayService;
-
-	@Autowired
-	private AdministratorCustomisationUpdateService		updateService;
+	private AdministratorCustomisationDisplayService displayService;
 
 
 	@PostConstruct
 	private void initialise() {
 		super.addCustomCommand(CustomCommand.DISPLAY, BasicCommand.SHOW, this.displayService);
-		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 }
