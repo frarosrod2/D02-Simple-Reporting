@@ -217,6 +217,7 @@ CREATE TABLE `customisation` (
 
 LOCK TABLES `customisation` WRITE;
 /*!40000 ALTER TABLE `customisation` DISABLE KEYS */;
+INSERT INTO `customisation` VALUES (6,0,'Technology, Science, Arts, Business, Health, Tecnología, Ciencia, Artes, Negocios, Salud',2.5,'sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar, sexo, duro, has ganado, un millón de dólares');
 /*!40000 ALTER TABLE `customisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -238,7 +239,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (6);
+INSERT INTO `hibernate_sequence` VALUES (7);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -595,7 +596,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$HDICIewH6TLBcFu75GAxUufPPdPtzWCOgmEo78MkAT0T8MOaj5Uxa','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$9YdOQJAbVOPU16gCtWr/s.cQTpR/DDMfBUL4kmpOMZVo1pG6avM0C','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$OTM3.dSzuNCXtgn4o7ySH.vvAJK3gjpWGJ2HhabYa4FncTSTqx48u','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$0ZBiYRlkwc94zKRwzJxMyO08c/mjHQFeqvkW9k1Bv4mFC0K3zmQNK','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -608,4 +609,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-19 12:05:19
+-- Dump completed on 2020-07-19 12:55:34
