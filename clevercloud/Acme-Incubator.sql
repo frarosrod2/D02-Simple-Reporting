@@ -396,36 +396,6 @@ LOCK TABLES `pazos_bulletin` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `pazosbulletin`
---
-
-DROP TABLE IF EXISTS `pazosbulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `pazosbulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `author` varchar(255) DEFAULT NULL,
-  `contact` varchar(255) DEFAULT NULL,
-  `experience` bit(1) DEFAULT NULL,
-  `food_handler` bit(1) DEFAULT NULL,
-  `moment` datetime(6) DEFAULT NULL,
-  `text` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `pazosbulletin`
---
-
-LOCK TABLES `pazosbulletin` WRITE;
-/*!40000 ALTER TABLE `pazosbulletin` DISABLE KEYS */;
-INSERT INTO `pazosbulletin` VALUES (6,0,'jim','paco@gmail.com',NULL,NULL,'2020-07-09 18:12:06.283000','test'),(7,0,'paco','paco@gmail.com',NULL,_binary '','2020-07-09 18:12:34.954000','testing');
-/*!40000 ALTER TABLE `pazosbulletin` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `provider`
 --
 
@@ -478,33 +448,6 @@ CREATE TABLE `rosa_bulletin` (
 LOCK TABLES `rosa_bulletin` WRITE;
 /*!40000 ALTER TABLE `rosa_bulletin` DISABLE KEYS */;
 /*!40000 ALTER TABLE `rosa_bulletin` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `rosabulletin`
---
-
-DROP TABLE IF EXISTS `rosabulletin`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `rosabulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `author` varchar(255) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `moment` datetime(6) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `rosabulletin`
---
-
-LOCK TABLES `rosabulletin` WRITE;
-/*!40000 ALTER TABLE `rosabulletin` DISABLE KEYS */;
-/*!40000 ALTER TABLE `rosabulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -596,7 +539,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$fjnFYTKzGV7PhCUj1dVwcOsm7Rb/UKdogw044lZytB2pnqP37nkaW','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$gKm5w/.q6LDWDsL6jg6Iy.rOQ4GERCbp5DoCWKJwherF/PVCzRmu.','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$RWWEJ/B7veHkhWh2P.MF/OtO23URTpBfW2Ivnj7xZc.z.kE0WGMiG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$7LYQ4cK6pyTZW5itCnvJOOXNwh0y.Liq/xengLQdJlPh4k99NSIBu','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -609,4 +552,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-19 13:03:06
+-- Dump completed on 2020-07-25  9:33:33
