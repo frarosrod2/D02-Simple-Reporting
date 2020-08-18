@@ -6,8 +6,8 @@
 <acme:form>
 	<acme:form-textbox code="administrator.notice.form.label.title" path="title"/>
 	<acme:form-textbox code="administrator.notice.form.label.picture" path="picture"/>
-	<acme:form-textbox code="administrator.notice.form.label.creation" path="creation"/>
-	<acme:form-textbox code="administrator.notice.form.label.deadline" path="deadline"/>
+	<acme:form-moment code="administrator.notice.form.label.creation" path="creation"/>
+	<acme:form-moment code="administrator.notice.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.notice.form.label.body" path="body"/>
 	<acme:form-panel code="administrator.notice.form.label.linkList">
 	

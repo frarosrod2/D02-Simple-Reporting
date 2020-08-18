@@ -11,9 +11,17 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
+    alter table `banner` 
+       drop 
+       foreign key `FKr19baq0bri0akndc7ruwhngy4`;
+
     alter table `consumer` 
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
+
+    alter table `credit_card` 
+       drop 
+       foreign key `FKa4pbn9v8sv66p46fsrke8ow89`;
 
     alter table `provider` 
        drop 
@@ -30,6 +38,8 @@
     drop table if exists `challenge`;
 
     drop table if exists `consumer`;
+
+    drop table if exists `credit_card`;
 
     drop table if exists `customisation`;
 
