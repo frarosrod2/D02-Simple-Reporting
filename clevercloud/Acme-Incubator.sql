@@ -106,16 +106,13 @@ DROP TABLE IF EXISTS `banner`;
 CREATE TABLE `banner` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
-  `credit_card_brand` varchar(255) DEFAULT NULL,
-  `credit_card_cvv` int(11) DEFAULT NULL,
-  `credit_card_exp_month` int(11) DEFAULT NULL,
-  `credit_card_exp_year` int(11) DEFAULT NULL,
-  `credit_card_holder_name` varchar(255) DEFAULT NULL,
-  `credit_card_number` varchar(255) DEFAULT NULL,
   `picture` varchar(255) DEFAULT NULL,
   `slogan` varchar(255) DEFAULT NULL,
   `targeturl` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `credit_card_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKr19baq0bri0akndc7ruwhngy4` (`credit_card_id`),
+  CONSTRAINT `FKr19baq0bri0akndc7ruwhngy4` FOREIGN KEY (`credit_card_id`) REFERENCES `credit_card` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -192,6 +189,35 @@ CREATE TABLE `consumer` (
 LOCK TABLES `consumer` WRITE;
 /*!40000 ALTER TABLE `consumer` DISABLE KEYS */;
 /*!40000 ALTER TABLE `consumer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `credit_card`
+--
+
+DROP TABLE IF EXISTS `credit_card`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `credit_card` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `brand` varchar(255) DEFAULT NULL,
+  `cvv` int(11) DEFAULT NULL,
+  `exp_month` int(11) DEFAULT NULL,
+  `exp_year` int(11) DEFAULT NULL,
+  `holder_name` varchar(255) DEFAULT NULL,
+  `number` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `credit_card`
+--
+
+LOCK TABLES `credit_card` WRITE;
+/*!40000 ALTER TABLE `credit_card` DISABLE KEYS */;
+/*!40000 ALTER TABLE `credit_card` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -539,7 +565,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$RWWEJ/B7veHkhWh2P.MF/OtO23URTpBfW2Ivnj7xZc.z.kE0WGMiG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$7LYQ4cK6pyTZW5itCnvJOOXNwh0y.Liq/xengLQdJlPh4k99NSIBu','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$UcRDvrjAprEh093g0otiLOHAQIejymmKv2HaH.ZEDib2VoC/wDGCG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$5vhu3DY1JZL3r7NbMbb2HOsJgWWSODAtGZepXLjq0OtYHHohxZOQy','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -552,4 +578,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-25  9:33:33
+-- Dump completed on 2020-08-19 16:32:50

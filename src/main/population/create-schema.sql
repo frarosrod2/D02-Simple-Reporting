@@ -69,7 +69,6 @@
         `exp_year` integer,
         `holder_name` varchar(255),
         `number` varchar(255),
-        `banner_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -241,11 +240,6 @@ create index IDX9u3lu85o98y0tro95qasghg8e on `inquiry` (`deadline`);
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `credit_card` 
-       add constraint `FKa4pbn9v8sv66p46fsrke8ow89` 
-       foreign key (`banner_id`) 
-       references `banner` (`id`);
 
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 

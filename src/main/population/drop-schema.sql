@@ -19,10 +19,6 @@
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
-    alter table `credit_card` 
-       drop 
-       foreign key `FKa4pbn9v8sv66p46fsrke8ow89`;
-
     alter table `provider` 
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
